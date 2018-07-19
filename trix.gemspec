@@ -5,14 +5,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'trix/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'trix'
+  spec.name          = 'trix-rails'
   spec.version       = Trix::VERSION
-  spec.authors       = 'Jon Moss'
-  spec.email         = 'me@jonathanmoss.me'
+  spec.authors       = ['Kyle Fox', 'Jon Moss']
+  spec.email         = ['kylefox@gmail.com', 'me@jonathanmoss.me']
 
   spec.summary       = 'A rich text editor for everyday writing'
   spec.description   = 'A rich text editor for everyday writing'
-  spec.homepage      = 'https://github.com/maclover7/trix'
+  spec.homepage      = 'https://github.com/kylefox/trix'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
