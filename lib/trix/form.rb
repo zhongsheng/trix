@@ -35,13 +35,13 @@ module ActionView
           add_default_name_and_id(options)
           options['input'] ||= dom_id(object, [options['id'], :trix_input].compact.join('_'))
 
-          value = if Rails.gem_version >= Gem::Version.new("5.2.x")
-            options.delete("value") { value_before_type_cast }
-          else
-            value_before_type_cast(object)
-          end
+          value = if Rails.gem_version >= Gem::Version.new('5.2.x')
+                    options.delete('value') { value_before_type_cast }
+                  else
+                    value_before_type_cast(object)
+                  end
 
-          trix_editor_tag(options.delete("name"), value, options)
+          trix_editor_tag(options.delete('name'), value, options)
         end
       end
     end
