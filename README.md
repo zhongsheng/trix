@@ -17,7 +17,7 @@ Please see the appropriate guide for your environment of choice:
 In your Gemfile you need to add the `trix` gem.
 
 ```ruby
-gem 'trix'
+gem 'trix-rails', require: 'trix'
 ```
 
 `bundle install` and restart your server to make the files available through the pipeline.
@@ -66,7 +66,7 @@ For the official Trix Github repository, go
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/maclover7/trix.
+Bug reports and pull requests are welcome on GitHub at https://github.com/kylefox/trix.
 
 ## Upgrading Trix
 1. Copy and paste Trix's `trix.js `to `vendor/assets/javascripts/trix.js`
