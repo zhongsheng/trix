@@ -9,3 +9,4 @@
 /tmp/
 /gemfiles/*.gemfile.lock
 .ruby-version
+*.gem
