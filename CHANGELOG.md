@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.1
+
+Released September 20, 2018
+
+* ✅ Upgrade to Trix 0.12.1.
+* 🐛🔨 Formtastic helper outputs hidden input tag before trix editor tag ([#9](https://github.com/kylefox/trix/pull/9)). Thanks [@ch000](https://github.com/ch000)!
+
 ## 1.0.0
 
 Released September 2, 2018
