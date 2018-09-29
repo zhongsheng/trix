@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.0.0
+
+Released September 29, 2018
+
+* ✅ Upgrade to [Trix 1.0.0](https://github.com/basecamp/trix/releases/tag/1.0.0) 🎉
+* ☝️ Note: following this project's [versioning policy](https://github.com/kylefox/trix/issues/4), the major version for `trix-rails` is likewise bumped when Trix receives a major version bump.
+* 🐛🔨 simple_form helper outputs hidden input tag before trix editor tag ([#10](https://github.com/kylefox/trix/pull/10)). Thanks [@bensie](https://github.com/bensie)!
+* 💪 Add appraisals for Rails 5.2.1
+
+
 ## 1.0.1
 
 Released September 20, 2018
