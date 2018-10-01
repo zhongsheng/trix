@@ -26,6 +26,18 @@ describe Trix::SimpleForm::TrixEditorInput, type: :view do
     assert_select 'trix-editor.trix-content'
   end
 
+  context 'with custom input class' do
+    let(:form) do
+      simple_form_for(post, url: 'some-url') do |f|
+        f.input(:body, as: :trix_editor, input: 'foo')
+      end
+    end
+
+    it 'outputs HTML containing the trix editor tag with a custom input name' do
+      assert_select 'trix-editor[input=foo]'
+    end
+  end
+
   context 'with custom toolbar' do
     let(:form) do
       simple_form_for(post, url: 'some-url') do |f|
